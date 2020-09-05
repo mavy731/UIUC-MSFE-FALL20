@@ -168,18 +168,21 @@ plt.savefig('KNN_iris.png', dpi=300)
 plt.show()
 
 #Find optimized K for KNN
-k_range=range(1,26)
-scores=[]
+k_range = range(1, 26)
+scores = []
+scores_tst = []
 for k in k_range:
-    knn=KNeighborsClassifier(n_neighbors=k)
-    knn.fit(X_train,y_train)
-    y_pred=knn.predict(X_test)
-    scores.append(accuracy_score(y_test,y_pred))
+    knn = KNeighborsClassifier(n_neighbors=k)
+    knn.fit(X_train, y_train)
+    y_pred = knn.predict(X_test)
+    scores.append(accuracy_score(y_test, y_pred))
+    scores_tst.append(knn.score(X_train, y_train))
 
-plt.bar(k_range,scores)
-plt.xlabel('k')
-plt.ylabel('Accuracy Score')
-plt.ylim(0.95,1)
+plt.plot(range(1, 26), scores, 'r-', label="Train")
+plt.plot(range(1, 26), scores_tst, 'b-', label='Test')
+plt.xlabel('Neighbors K')
+plt.ylabel('Accuracy')
+plt.legend()
 plt.savefig('KNN_OptK_iris.png',dpi=300)
 plt.show()
 
