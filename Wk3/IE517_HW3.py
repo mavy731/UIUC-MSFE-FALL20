@@ -1,5 +1,3 @@
-__author__ = 'mike_bowles'
-import urllib3
 import sys
 import pandas as pd
 import numpy as np
