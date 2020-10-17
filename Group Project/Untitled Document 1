@@ -1,0 +1,56 @@
+Simple Model
+
+sum [0.16948694 0.27532841 0.37496513 0.45780123 0.53034334 0.59411211
+ 0.65007489 0.69627609 0.74118645 0.78550554 0.82764129 0.86450993
+ 0.89634752 0.92458375 0.94860801]
+Binomial Classification logreg
+Accuracy: 0.773
+Accuracy scores (in-sample):  0.7654
+Accuracy scores (out-sample):  0.77255
+
+DecisionTree cv acciracy scores: [0.76551724 0.75172414 0.76551724 0.75172414 0.75172414 0.75694444
+ 0.76388889 0.77083333 0.76388889 0.75694444]
+DecisionTreeCV accurracy: 0.75987 +/- 0.00658
+
+Binomial Classification knn
+Accuracy: 0.757
+Accuracy scores (in-sample):  0.82491
+Accuracy scores (out-sample):  0.75686
+knn cv acciracy scores: [0.8137931  0.77931034 0.79310345 0.74482759 0.77931034 0.6875
+ 0.79861111 0.76388889 0.76388889 0.81944444]
+knnCV accurracy: 0.77437 +/- 0.03635
+Binomial Classification decision tree
+Accuracy: 0.757
+Accuracy scores (in-sample):  0.95363
+Accuracy scores (out-sample):  0.75686
+DecisionTree cv acciracy scores: [0.77241379 0.76551724 0.75862069 0.72413793 0.82068966 0.76388889
+ 0.80555556 0.72916667 0.79166667 0.75      ]
+DecisionTreeCV accurracy: 0.76817 +/- 0.02938
+Multiclass Classification knn
+Accuracy: 0.325
+Accuracy scores (in-sample):  0.49343
+Accuracy scores (out-sample):  0.32549
+
+knn cv acciracy scores: [0.31034483 0.29655172 0.28965517 0.24137931 0.27586207 0.27083333
+ 0.29166667 0.27777778 0.29861111 0.30555556]
+knnCV accurracy: 0.28582 +/- 0.01919
+Multiclass Classification decision tree
+Accuracy: 0.278
+Accuracy scores (in-sample):  0.59862
+Accuracy scores (out-sample):  0.27843
+
+DecisionTree cv acciracy scores: [0.26896552 0.29655172 0.28965517 0.27586207 0.24137931 0.22916667
+ 0.28472222 0.25694444 0.30555556 0.27777778]
+DecisionTreeCV accurracy: 0.27266 +/- 0.02292
+
+0.41591475095785435
+{'metric': 'minkowski', 'n_neighbors': 1, 'p': 2}
+0.7979166666666667
+{'metric': 'minkowski', 'n_neighbors': 1, 'p': 2}
+
+0.30312739463601535
+{'max_depth': 12}
+0.7764894636015326
+{'max_depth': 12}
+
+
