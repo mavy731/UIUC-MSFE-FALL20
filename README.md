@@ -7,3 +7,4 @@
 - Course Name: Machine Learning in Fin Lab
 - Time: Fall2020
 - Language: Python
+- Toolbox: scikit-learn
